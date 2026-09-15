@@ -3,9 +3,11 @@ merge_queue:
 queue_rules:
   - name: default
     batch_size: 2
-    batch_max_wait_time: 1 min
+    batch_max_wait_time: 10 min
     merge_method: merge-batch
     merge_conditions:
       - label = bug
 pull_request_rules: []
+
+
 
