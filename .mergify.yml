@@ -1,0 +1,11 @@
+merge_queue:
+  mode: serial
+queue_rules:
+  - name: default
+    batch_size: 2
+    batch_max_wait_time: 1 min
+    merge_method: merge-batch
+    merge_conditions:
+      - label = bug
+pull_request_rules: []
+
